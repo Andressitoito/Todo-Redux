@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+
+<body>
+
+ <script>
+
+  /* 
+  
+  Tipos de datos
+
+  strings
+  numbers
+  boolean
+  symbol
+  bigint
+  undefined = no esta declarada y no tiene valor
+  null => esta declarada y no tiene valor
+  */
+
+  // ESTRUCTURAS DE DATOS
+
+  // - Arrays
+  let provincias = ['mendoza', 'capital federal']
+
+  // - Diccionarios
+  let objetos = {
+   culo: 'culon'
+  }
+
+  // - Arboles
+  // React con la app y sus hijos es un arbol
+
+  // - Pilas
+  // FIFO y FILO
+  // - Colas
+
+  /* OPERADORES TERNARIOS */
+
+  const name = 'Denis'
+
+  /* CONDICIONALES MULTIPLES */
+  /* 
+  false = devuelve el primer valor false
+  true = devuelve el ultimo valor true
+  */
+  if ('' && 1) //
+   if (true && false && ['gola'])
+    if (true && 1) {
+
+    }
+
+  /* OBJETOS Y ARRAYS BIEN USADOS */
+
+  const persona = {
+   nombre: 'Denis',
+   city: 'Bs As',
+   age: 12
+  }
+  const { nombre, city, age } = persona
+
+  /* ...more, asignar todo lo demas y omitir city */
+  const { [city]: omit, ...more } = persona
+
+  /* AGREGAR ATRIBUTOS */
+  const newPerson = { ...person, edad: 20 }
+  Object.assign({ edad: 20 }, person)
+
+  person.name = 'hola' /* MUTA LOS DATOS... NO SE HACE ESTO */
+
+  object.keys() // ['name', 'city']
+  object.values() // ['denis', 'Bs As']
+  object.entries() // [{name: 'denis'}, {city: 'Bs As'} ]
+  object.fromEntries() // [key, value]
+
+  /*
+  
+  
+  Login
+  Rutas privadas
+  High order component
+  Layout component dentro de Routes
+  Usar jsx en javascript (styled Components **, Tailwind)
+  Testing unitario con (Testing Library)
+  Separar las funciones logicas en helpers
+  Ordenar los compenentes en Nombre de compenente => Index => Helpers
+  Dentro de una carpeta
+  // Button
+  // Index
+  // Helpers
+  Investigar TypeScrypt (es super facil)
+  (USAR TYPES, no interface) Funciones, Variables, Componentes
+    
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+
+</body>
+
+</html>

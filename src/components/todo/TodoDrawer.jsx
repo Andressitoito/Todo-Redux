@@ -21,7 +21,7 @@ const TodoDrawer = () => {
  return (
   <>
    <Button colorScheme="green" onClick={onOpen}>
-    Open
+    Show Completed
    </Button>
    <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
     <DrawerOverlay />
