@@ -13,6 +13,7 @@ import { Profile } from './pages/Profile'
 import React from 'react'
 
 import './App.css'
+import { ExampleWithConsoleLog } from './pages/Example'
 
 const withImpuestos = (Component) => {
 
@@ -65,6 +66,8 @@ function App(props) {
  return (
   <div className="App">
    <Navbar />
+
+   <ExampleWithConsoleLog/>
 
    {
     data && <div className='div-especial'>{data}</div>

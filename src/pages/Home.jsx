@@ -4,11 +4,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { clearTodos } from "../features/todo/todosSlice";
 import React from "react";
 
+import connect from "./connect";
+
 import MyHOCComponent from "./MyHOCComponent";
+
+
+
 
 function Home(props) {
 
-const dispatch = useDispatch();
+ const dispatch = useDispatch();
  /* 
 se usa el use selector para obtener la informacion de los ToDos
 el hook nos da por parametro el state
@@ -73,7 +78,21 @@ y del state queremos obtener los ToDos
  );
 };
 
+const mapStateToProps = (state) => {
+ return state
+}
+
 
 // export { Home }
 
-export default MyHOCComponent(Home)
+// export default MyHOCComponent(
+//  connect(mapStateToProps)(Home)
+// )
+
+export default connect(mapStateToProps)(Home)
+
+/* 
+const wrapper = connect(mapStateToProps)
+const hoc = wrapper(Home)
+
+ */
